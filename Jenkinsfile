@@ -13,7 +13,7 @@ pipeline {
   environment {
     MY_NAME = 'Saman'
     MYVARNAME_USR = 'SAMAN'
-    MYVARNAME_PWD = 'Shariq124!'
+    MYVARNAME_PWD = 'abac123'
   }
   parameters {
     string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
