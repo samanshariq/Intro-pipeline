@@ -9,11 +9,6 @@ pipeline {
         sh 'java -version'
       }
     }
-    stage('Notify event') {
-      steps {
-        build 'Saman event'
-      }
-    }
   }
   environment {
     MY_NAME = 'Saman'
