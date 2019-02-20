@@ -4,15 +4,16 @@ pipeline {
     stage('Say Hello') {
       steps {
         echo "Hello ${MY_NAME}"
-        echo "${TEST_USER_USR}"
-        echo "${TEST_USER_PSW}"
+        echo "${MYVARNAME_USR}"
+        echo "${MYVARNAME_PWD}"
         sh 'java -version'
       }
     }
   }
   environment {
     MY_NAME = 'Saman'
-    TEST_USER = credentials('test-user')
+    MYVARNAME_USR = 'SAMAN'
+    MYVARNAME_PWD = 'Shariq124!'
   }
   parameters {
     string(name: 'Name', defaultValue: 'whoever you are', description: 'Who should I say hi to?')
