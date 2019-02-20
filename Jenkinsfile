@@ -9,10 +9,5 @@ pipeline {
         sh 'java -version'
       }
     }
-    stage('Label') {
-      steps {
-        node(label: 'jdk10')
-      }
-    }
   }
 }
