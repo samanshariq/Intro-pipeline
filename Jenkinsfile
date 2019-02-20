@@ -15,6 +15,7 @@ pipeline {
       }
       steps {
         echo 'Continuing with deployment'
+        timeout(time: 10)
       }
     }
   }
