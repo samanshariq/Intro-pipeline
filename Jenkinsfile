@@ -9,18 +9,6 @@ pipeline {
         sh 'java -version'
       }
     }
-       stage('Checkpoint') {
-         agent none
-         steps {
-            checkpoint 'Checkpoint'
-         }
-      }
-      stage('Deploy') {
-         agent none
-         steps {
-            echo 'Deploying....'
-         }
-      }
   }
   environment {
     MY_NAME = 'Saman'
