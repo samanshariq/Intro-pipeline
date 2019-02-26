@@ -9,6 +9,11 @@ pipeline {
         sh 'java -version'
       }
     }
+    stage('print') {
+      steps {
+        echo 'echo \'saman\''
+      }
+    }
   }
   environment {
     MY_NAME = 'Saman'
